@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etalase Produk - TokoOnline Asyik</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="brand">TokoOnline Asyik</div>
+      <ul>
+        <li><a href="index.html" aria-current="page">Etalase</a></li>
+        <li><a href="form.html">Generator Caption</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <container class="container">
+    <h2>Katalog Produk</h2>
+    <p style="margin-bottom: 1.5rem; color: #64748b;">Menampilkan data produk langsung dari DummyJSON</p>
+
+    <!-- Fitur Cari & Filter -->
+    <div class="filter-container">
+      <input type="text" id="searchInput" placeholder="Cari produk berdasarkan nama...">
+      <select id="categorySelect">
+        <option value="">Semua Kategori</option>
+      </select>
+    </div>
+
+    <!-- Grid Produk -->
+    <div id="productGrid" class="product-grid">
+      <div class="loading">Memuat data produk...</div>
+    </div>
+  </container>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
